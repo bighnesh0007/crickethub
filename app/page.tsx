@@ -40,13 +40,14 @@ export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   return (
-    <div className="min-h-screen bg-background text-foreground no-scrollbar overflow-scroll">
+    // <div className="min-h-screen bg-background text-foreground no-scrollbar overflow-scroll">
+    <div className="min-h-screen bg-gradient-to-br from-blue-900 via-gray-800 to-black text-white no-scrollbar overflow-scroll shadow-xl p-8 rounded-lg border border-gray-700">
       <header className="sticky top-0 z-40 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container flex h-14 items-center">
           <div className="mr-4 hidden md:flex">
             <Link href="/" className="mr-6 flex items-center space-x-2">
-              <Image src="/placeholder.svg" alt="Cricket Logo" width={32} height={32} />
-              <span className="hidden font-bold sm:inline-block">CricketHub</span>
+              <Image src="/image/logo.jpeg" alt="Cricket Logo" width={40} height={40} className="ml-2 rounded-md"/>
+              {/* <span className="hidden font-bold sm:inline-block">CricketHub</span> */}
             </Link>
             <nav className="flex items-center space-x-6 text-sm font-medium">
               {navItems.map((item) => (
@@ -169,7 +170,7 @@ export default function Home() {
           >
             <div className="relative h-[300px] sm:h-[400px] lg:h-[500px] rounded-lg overflow-hidden">
               <Image
-                src="/placeholder.svg"
+                src="/image/cricket_stadium.jpeg"
                 alt="Cricket Stadium"
                 layout="fill"
                 objectFit="cover"
